@@ -4,7 +4,7 @@
   --secondary-color: #e7eef6;
   --accent-color: #b45f06;
   --text-color: #222;
-  --light-color: #fff;
+  --light-color: #ffffff;
   --border-color: #c7d0da;
 }
 
@@ -69,16 +69,16 @@ header span {
 .navigation a {
   display: block;
   padding: 1rem;
-  color: #ffffff; /* texto blanco = buen contraste */
+  color: #ffffff; /* texto blanco */
   text-decoration: none;
   min-height: 44px;
   font-weight: 700;
 }
 
-/* FIX contraste */
+/* FIX contraste WCAG */
 .navigation li.current a,
 .navigation a:hover {
-  background-color: #ffffff; /* fondo blanco */
+  background-color: #ffffff; /* fondo claro */
   color: var(--primary-color); /* texto oscuro */
 }
 
@@ -89,7 +89,9 @@ main {
   padding: 1rem;
 }
 
-h1 { color: var(--primary-color); }
+h1 {
+  color: var(--primary-color);
+}
 
 /* tarjetas */
 .card {
@@ -115,7 +117,9 @@ h1 { color: var(--primary-color); }
 }
 
 /* foto */
-.photo-card { text-align: center; }
+.photo-card {
+  text-align: center;
+}
 
 .photo-card img {
   width: 260px;
@@ -198,4 +202,20 @@ footer {
   justify-content: center;
   width: 48px;
   height: 48px;
+}
+
+/* 🔥 refuerzo final para evitar errores de contraste */
+#nav-bar.navigation {
+  background-color: #17324d;
+}
+
+#nav-bar.navigation a {
+  color: #ffffff;
+  background-color: #17324d;
+}
+
+#nav-bar.navigation li.current a,
+#nav-bar.navigation a:hover {
+  color: #17324d;
+  background-color: #ffffff;
 }

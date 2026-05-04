@@ -9,6 +9,7 @@
 
   .navigation {
     display: block;
+    background-color: #17324d;
   }
 
   .navigation ul {
@@ -22,6 +23,17 @@
     text-align: center;
   }
 
+  .navigation a {
+    color: #ffffff;
+    background-color: #17324d;
+  }
+
+  .navigation li.current a,
+  .navigation a:hover {
+    color: #17324d;
+    background-color: #ffffff;
+  }
+
   .main-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -31,4 +43,20 @@
   .course-list {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* final contrast protection */
+#nav-bar.navigation {
+  background-color: #17324d;
+}
+
+#nav-bar.navigation a {
+  color: #ffffff;
+  background-color: #17324d;
+}
+
+#nav-bar.navigation li.current a,
+#nav-bar.navigation a:hover {
+  color: #17324d;
+  background-color: #ffffff;
 }
