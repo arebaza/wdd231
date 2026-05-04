@@ -9,6 +9,7 @@
 
   .navigation {
     display: block;
+    background-color: #17324d;
   }
 
   .navigation ul {
@@ -20,6 +21,7 @@
     flex: 1 1 100%;
     max-width: 220px;
     text-align: center;
+    background-color: #17324d;
   }
 
   .main-grid {

@@ -1,8 +1,8 @@
-:root { 
+:root {
   --primary-color: #17324d;
   --secondary-color: #e7eef6;
   --accent-color: #b45f06;
-  --text-color: #ffffff;
+  --text-color: #222222;
   --light-color: #ffffff;
   --border-color: #c7d0da;
 }
@@ -20,6 +20,7 @@ header {
   gap: 0.75rem;
   padding: 1rem;
   background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 header img {
@@ -54,6 +55,7 @@ header span {
 .navigation {
   display: none;
   background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .navigation.show {
@@ -66,18 +68,27 @@ header span {
   padding: 0;
 }
 
-.navigation a {
+.navigation li {
+  background-color: var(--primary-color);
+}
+
+.navigation a,
+.navigation a:link,
+.navigation a:visited {
   display: block;
   padding: 1rem;
-  color: var(--light-color);
-  background-color: var(--primary-color);
-  text-decoration: none;
   min-height: 44px;
   font-weight: 700;
+  text-decoration: none;
+  color: var(--light-color);
+  background-color: var(--primary-color);
 }
 
 .navigation li.current a,
-.navigation a:hover {
+.navigation li.current a:link,
+.navigation li.current a:visited,
+.navigation a:hover,
+.navigation a:focus {
   color: var(--primary-color);
   background-color: var(--light-color);
 }
@@ -86,7 +97,7 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
-  color: #222; /* normal text stays dark */
+  color: var(--text-color);
 }
 
 h1 {
@@ -125,7 +136,7 @@ h1 {
   object-fit: cover;
   margin: 1.5rem auto;
   border-radius: 8px;
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 
 .filter-buttons {
@@ -145,7 +156,8 @@ h1 {
   cursor: pointer;
 }
 
-.filter-buttons button:hover {
+.filter-buttons button:hover,
+.filter-buttons button:focus {
   background-color: var(--primary-color);
   color: var(--light-color);
 }
@@ -181,6 +193,7 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .social {
@@ -196,16 +209,5 @@ footer {
   justify-content: center;
   width: 48px;
   height: 48px;
-}
-/* fix contraste final */
-#nav-bar.navigation,
-#nav-bar.navigation a {
-  background-color: #17324d;
-  color: #ffffff !important;
-}
-
-#nav-bar.navigation li.current a,
-#nav-bar.navigation a:hover {
-  background-color: #ffffff !important;
-  color: #17324d !important;
+  background-color: transparent;
 }
