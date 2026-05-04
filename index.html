@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-US">
 <head>
+  <!-- Configuracion basica -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="WDD 231 course home page for Armando Rebaza with course information and web certificate courses.">
@@ -8,83 +9,104 @@
   <meta name="theme-color" content="#ffffff">
   <title>WDD 231 | Course Home Page | Armando Rebaza</title>
 
+  <!-- Fuente de Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="week01/styles/normalize.css">
-  <link rel="stylesheet" href="week01/styles/small.css">
-  <link rel="stylesheet" href="week01/styles/larger.css">
+  <!-- Archivos CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- JS -->
-  <script src="week01/scripts/navigation.js" defer></script>
-  <script src="week01/scripts/date.js" defer></script>
-  <script src="week01/scripts/course.js" defer></script>
+  <!-- Archivos JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
+  <!-- Encabezado -->
   <header>
-    <img src="week01/images/logo.svg" alt="Site logo" width="40" height="40">
+    <img src="images/logo.svg" alt="Site logo" width="40" height="40">
     <span id="course-title">WDD 231 – Dynamic Web Fundamentals</span>
     <span>Armando Rebaza</span>
+
+    <!-- Boton menu -->
     <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu"></button>
   </header>
 
+  <!-- Navegacion -->
   <nav id="nav-bar" class="navigation" aria-label="Main navigation">
     <ul>
       <li class="current"><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="week01/chamber/index.html">Chamber</a></li>
-      <li><a href="week01/final/index.html">Final</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final</a></li>
     </ul>
   </nav>
 
+  <!-- Contenido principal -->
   <main>
     <h1>Home</h1>
 
+    <!-- Grid principal -->
     <div class="main-grid">
+
+      <!-- Seccion sobre mi -->
       <section class="card about-card">
         <h2>About Me</h2>
-        <p>Hello! My name is Armando Rebaza. I live in Utah, and I am studying web development. I enjoy learning how to create useful, clean, and responsive websites using HTML, CSS, and JavaScript. I also like solving problems, working with data, and finding better ways to help people through technology.</p>
+        <p>Hello! My name is Armando Rebaza. I live in Utah, and I am studying web development. I enjoy learning how to create useful, clean, and responsive websites using HTML, CSS, and JavaScript.</p>
       </section>
 
+      <!-- Seccion foto -->
       <section class="card photo-card">
         <h2>Student Photo</h2>
-        <img src="week01/images/profile.webp" alt="Portrait of Armando Rebaza" width="300" height="300">
+        <img src="images/profile.webp" alt="Portrait of Armando Rebaza" width="300" height="300">
       </section>
+
     </div>
 
+    <!-- Seccion cursos -->
     <section class="card courses-card">
       <h2>Web Certificate Courses</h2>
 
+      <!-- Botones filtro -->
       <div class="filter-buttons">
         <button id="all" type="button">All</button>
         <button id="cse" type="button">CSE</button>
         <button id="wdd" type="button">WDD</button>
       </div>
 
+      <!-- Lista de cursos -->
       <div id="course-list" class="course-list"></div>
+
+      <!-- Total de creditos -->
       <p id="total-credits"></p>
     </section>
   </main>
 
+  <!-- Pie de pagina -->
   <footer>
+
+    <!-- Redes sociales -->
     <div class="social">
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-        <img src="week01/images/github.svg" alt="GitHub icon" width="48" height="48">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <img src="images/github.svg" alt="GitHub icon" width="48" height="48">
       </a>
 
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-        <img src="week01/images/linkedin.svg" alt="LinkedIn icon" width="48" height="48">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <img src="images/linkedin.svg" alt="LinkedIn icon" width="48" height="48">
       </a>
 
-      <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X profile">
-        <img src="week01/images/x.svg" alt="X icon" width="48" height="48">
+      <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+        <img src="images/x-social.svg" alt="X icon" width="48" height="48">
       </a>
     </div>
 
+    <!-- Año y fecha -->
     <p>&copy; <span id="current-year"></span> • Armando Rebaza • Utah, USA</p>
     <p id="lastModified"></p>
+
   </footer>
 </body>
 </html>
