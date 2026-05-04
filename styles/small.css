@@ -1,5 +1,4 @@
 :root { 
-  /* colores principales */
   --primary-color: #17324d;
   --secondary-color: #e7eef6;
   --accent-color: #b45f06;
@@ -8,14 +7,12 @@
   --border-color: #c7d0da;
 }
 
-/* cuerpo */
 body {
   font-family: "Roboto", Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--light-color);
 }
 
-/* header */
 header {
   display: grid;
   grid-template-columns: 44px auto 44px;
@@ -36,7 +33,6 @@ header span {
   color: var(--primary-color);
 }
 
-/* boton menu */
 .hamburger {
   width: 44px;
   height: 44px;
@@ -47,10 +43,14 @@ header span {
   cursor: pointer;
 }
 
-.hamburger::before { content: "\2630"; }
-.hamburger.show::before { content: "\00D7"; }
+.hamburger::before {
+  content: "\2630";
+}
 
-/* navegacion */
+.hamburger.show::before {
+  content: "\00D7";
+}
+
 .navigation {
   display: none;
   background-color: var(--primary-color);
@@ -69,20 +69,19 @@ header span {
 .navigation a {
   display: block;
   padding: 1rem;
-  color: #ffffff; /* texto blanco */
+  color: var(--light-color);
+  background-color: var(--primary-color);
   text-decoration: none;
   min-height: 44px;
   font-weight: 700;
 }
 
-/* FIX contraste WCAG */
 .navigation li.current a,
 .navigation a:hover {
-  background-color: #ffffff; /* fondo claro */
-  color: var(--primary-color); /* texto oscuro */
+  color: var(--primary-color);
+  background-color: var(--light-color);
 }
 
-/* main */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -93,7 +92,6 @@ h1 {
   color: var(--primary-color);
 }
 
-/* tarjetas */
 .card {
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -116,7 +114,6 @@ h1 {
   line-height: 1.6;
 }
 
-/* foto */
 .photo-card {
   text-align: center;
 }
@@ -130,7 +127,6 @@ h1 {
   background-color: #ccc;
 }
 
-/* botones filtro */
 .filter-buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,6 +139,7 @@ h1 {
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   background-color: var(--secondary-color);
+  color: var(--text-color);
   font-weight: 700;
   cursor: pointer;
 }
@@ -152,7 +149,6 @@ h1 {
   color: var(--light-color);
 }
 
-/* lista cursos */
 .course-list {
   display: grid;
   gap: 0.5rem;
@@ -165,30 +161,27 @@ h1 {
   border: 1px solid var(--border-color);
   border-radius: 6px;
   background-color: #dbe3ec;
+  color: var(--text-color);
   font-weight: 700;
 }
 
-/* cursos completados */
 .course-card.completed {
   background-color: var(--accent-color);
   color: var(--light-color);
 }
 
-/* total creditos */
 #total-credits {
   margin: 0;
   text-align: center;
   font-weight: 700;
 }
 
-/* footer */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--secondary-color);
 }
 
-/* redes sociales */
 .social {
   display: flex;
   justify-content: center;
@@ -202,20 +195,4 @@ footer {
   justify-content: center;
   width: 48px;
   height: 48px;
-}
-
-/* 🔥 refuerzo final para evitar errores de contraste */
-#nav-bar.navigation {
-  background-color: #17324d;
-}
-
-#nav-bar.navigation a {
-  color: #ffffff;
-  background-color: #17324d;
-}
-
-#nav-bar.navigation li.current a,
-#nav-bar.navigation a:hover {
-  color: #17324d;
-  background-color: #ffffff;
 }
