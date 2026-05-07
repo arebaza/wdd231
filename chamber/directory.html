@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jessica's Events Chamber of Commerce Directory</title>
+  <meta name="description" content="Business directory for Jessica's Events Chamber of Commerce in Orem, Utah.">
+  <meta name="author" content="Armando Rebaza">
+
+  <meta property="og:title" content="Jessica's Events Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore local businesses and event services in Orem, Utah.">
+  <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/logo.webp" alt="Jessica's Events Chamber logo" width="80" height="80">
+      <div>
+        <span class="site-name">Jessica's Events</span>
+        <span class="site-subtitle">Chamber of Commerce</span>
+      </div>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav id="navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <section class="view-options">
+      <h2>View Options</h2>
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </section>
+
+    <section id="members" class="grid"></section>
+  </main>
+
+  <footer>
+    <div>
+      <h2>Jessica's Events Chamber of Commerce</h2>
+      <p>Orem, Utah</p>
+      <p>info@jessicasevents.com</p>
+      <p>(801) 555-1234</p>
+    </div>
+
+    <div>
+      <p>WDD 231 Class Project</p>
+      <p>Armando Rebaza</p>
+      <p>&copy; <span id="currentyear"></span> Jessica's Events Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastmodified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

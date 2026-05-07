@@ -7,20 +7,33 @@
   --border-color: #c7d0da;
 }
 
+/* ajuste general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--light-color);
 }
 
+/* header */
 header {
   display: grid;
-  grid-template-columns: 44px auto 44px;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
   align-items: center;
   gap: 0.75rem;
   padding: 1rem;
   background-color: var(--secondary-color);
-  color: var(--primary-color);
 }
 
 header img {
@@ -29,11 +42,17 @@ header img {
 }
 
 header span {
-  font-size: 1.4rem;
+  min-width: 0;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
+.student-name {
+  display: none;
+}
+
+/* boton menu */
 .hamburger {
   width: 44px;
   height: 44px;
@@ -52,10 +71,10 @@ header span {
   content: "\00D7";
 }
 
+/* navegacion */
 .navigation {
   display: none;
   background-color: var(--primary-color);
-  color: var(--light-color);
 }
 
 .navigation.show {
@@ -85,25 +104,26 @@ header span {
 }
 
 .navigation li.current a,
-.navigation li.current a:link,
-.navigation li.current a:visited,
 .navigation a:hover,
 .navigation a:focus {
   color: var(--primary-color);
   background-color: var(--light-color);
 }
 
+/* main */
 main {
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  color: var(--text-color);
 }
 
 h1 {
   color: var(--primary-color);
+  font-size: 1.6rem;
 }
 
+/* tarjetas */
 .card {
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -126,22 +146,25 @@ h1 {
   line-height: 1.6;
 }
 
+/* foto */
 .photo-card {
   text-align: center;
 }
 
 .photo-card img {
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
   object-fit: cover;
   margin: 1.5rem auto;
   border-radius: 8px;
   background-color: #cccccc;
 }
 
+/* botones */
 .filter-buttons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
   padding: 1rem;
 }
@@ -162,6 +185,7 @@ h1 {
   color: var(--light-color);
 }
 
+/* cursos */
 .course-list {
   display: grid;
   gap: 0.5rem;
@@ -189,6 +213,7 @@ h1 {
   font-weight: 700;
 }
 
+/* footer */
 footer {
   text-align: center;
   padding: 1rem;

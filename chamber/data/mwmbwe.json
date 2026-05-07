@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Jessica's Events",
+    "address": "Orem, Utah",
+    "phone": "(801) 555-1001",
+    "website": "https://example.com",
+    "image": "jessicas-events.webp",
+    "membershipLevel": 3,
+    "tagline": "Planning beautiful and memorable social events."
+  },
+  {
+    "name": "Orem Floral Design",
+    "address": "120 Center Street, Orem, UT",
+    "phone": "(801) 555-1002",
+    "website": "https://example.com",
+    "image": "orem-floral.webp",
+    "membershipLevel": 2,
+    "tagline": "Fresh floral arrangements for weddings and celebrations."
+  },
+  {
+    "name": "Mountain View Catering",
+    "address": "455 State Street, Orem, UT",
+    "phone": "(801) 555-1003",
+    "website": "https://example.com",
+    "image": "mountain-catering.webp",
+    "membershipLevel": 3,
+    "tagline": "Delicious catering for family and corporate events."
+  },
+  {
+    "name": "Utah Valley Photography",
+    "address": "88 University Parkway, Orem, UT",
+    "phone": "(801) 555-1004",
+    "website": "https://example.com",
+    "image": "utah-photography.webp",
+    "membershipLevel": 2,
+    "tagline": "Professional photography for special moments."
+  },
+  {
+    "name": "Celebration Rentals",
+    "address": "230 Geneva Road, Orem, UT",
+    "phone": "(801) 555-1005",
+    "website": "https://example.com",
+    "image": "celebration-rentals.webp",
+    "membershipLevel": 1,
+    "tagline": "Tables, chairs, linens, and party equipment rentals."
+  },
+  {
+    "name": "Sweet Moments Bakery",
+    "address": "75 Main Street, Orem, UT",
+    "phone": "(801) 555-1006",
+    "website": "https://example.com",
+    "image": "sweet-bakery.webp",
+    "membershipLevel": 1,
+    "tagline": "Custom cakes and desserts for every occasion."
+  },
+  {
+    "name": "Elegant Sounds DJ",
+    "address": "390 800 East, Orem, UT",
+    "phone": "(801) 555-1007",
+    "website": "https://example.com",
+    "image": "elegant-dj.webp",
+    "membershipLevel": 2,
+    "tagline": "Music and entertainment for weddings and parties."
+  }
+]

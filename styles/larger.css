@@ -1,6 +1,14 @@
 @media screen and (min-width: 700px) {
   header {
-    grid-template-columns: 48px auto;
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+  }
+
+  header span {
+    font-size: 1.4rem;
+  }
+
+  .student-name {
+    display: inline;
   }
 
   .hamburger {
