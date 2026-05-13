@@ -228,3 +228,59 @@ footer h2 {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  padding: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #003366;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.home-grid,
+.spotlights-section {
+  padding: 1rem;
+}
+
+.events-card,
+.weather-card,
+.spotlight-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+#spotlights {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-card img {
+  max-width: 100%;
+  height: auto;
+}

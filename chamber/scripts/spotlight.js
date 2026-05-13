@@ -25,7 +25,7 @@ function displaySpotlights(members) {
   );
 
   const randomMembers = qualifiedMembers
-    .sort(() => 0.5 - Math.random())
+    .sort(() => Math.random() - 0.5)
     .slice(0, 3);
 
   randomMembers.forEach((member) => {
