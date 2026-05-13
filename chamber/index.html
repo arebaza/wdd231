@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessica's Events Chamber of Commerce | Home</title>
+  <meta name="description" content="Home page for Jessica's Events Chamber of Commerce with events, weather, and member spotlights.">
+  <meta name="author" content="Armando Rebaza">
+
+  <meta property="og:title" content="Jessica's Events Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.webp">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/index.html">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.webp" alt="Jessica's Events Chamber logo" width="80" height="80">
+    <span>Jessica's Events Chamber of Commerce</span>
+    <button id="menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="#">Join</a>
+    <a href="#">Discover</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 700px)">
+        <img src="images/hero.webp" alt="Community business event with people networking" width="1200" height="600">
+      </picture>
+      <div class="hero-content">
+        <h1>Welcome to Jessica's Events Chamber</h1>
+        <p>Connecting local businesses, entrepreneurs, and community leaders.</p>
+        <a class="cta-button" href="#">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section class="home-grid">
+      <section class="events-card">
+        <h2>Current Events</h2>
+        <article>
+          <h3>Business Networking Breakfast</h3>
+          <p>Join local business owners this Friday at 8:00 AM to connect and share ideas.</p>
+        </article>
+        <article>
+          <h3>Community Planning Workshop</h3>
+          <p>Learn how local organizations can collaborate for upcoming city events.</p>
+        </article>
+      </section>
+
+      <section class="weather-card">
+        <h2>Weather</h2>
+        <p><strong>Current Temperature:</strong> <span id="current-temp">Loading...</span></p>
+        <p><strong>Condition:</strong> <span id="weather-desc">Loading...</span></p>
+        <figure>
+          <img id="weather-icon" src="#" alt="" width="80" height="80">
+        </figure>
+
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
+      </section>
+    </section>
+
+    <section class="spotlights-section">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Jessica's Events Chamber of Commerce</strong></p>
+      <p>Orem, Utah</p>
+      <p>info@jessicasevents.com</p>
+      <p>(801) 555-1234</p>
+    </div>
+
+    <div>
+      <p>WDD 231 Chamber Project</p>
+      <p>Armando Rebaza</p>
+      <p>&copy; <span id="currentyear"></span> Jessica's Events Chamber</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector("#currentyear").textContent = new Date().getFullYear();
+    document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+
+    const menuButton = document.querySelector("#menu");
+    const navigation = document.querySelector("#navigation");
+
+    menuButton.addEventListener("click", () => {
+      navigation.classList.toggle("open");
+      menuButton.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

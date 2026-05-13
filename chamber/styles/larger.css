@@ -30,3 +30,26 @@
     text-align: left;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .hero-content {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  #spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
